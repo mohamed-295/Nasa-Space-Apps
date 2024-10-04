@@ -27,7 +27,7 @@ class GameScreen extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const SizedBox(height: 35),
+            const SizedBox(height: 75),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -43,52 +43,11 @@ class GameScreen extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 35),
+            const SizedBox(height: 45),
             const BluetoothWidget(),
-            const SizedBox(height: 35),
+            const SizedBox(height: 65),
             const ChooseDifficulty(),
             const SizedBox(height: 35),
-          Container(
-              width: MediaQuery.of(context).size.width * 0.9,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(37),
-                color: Color.fromARGB(210, 255, 255, 255),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(4),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(left: 15.0, top: 8),
-                      child: Text(
-                        "Result :",
-                        style: TextStyle(fontSize: 20),
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Container(
-                      height: 75,
-                      decoration: BoxDecoration(
-                        color:  Color(0xff000D99),
-                        borderRadius: BorderRadius.circular(37),
-                      ),
-                      child: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal:20),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text("Accuracy : 70% ",style: TextStyle(fontSize: 20 ,color: Colors.white), ),
-                             Text("Score : 21/30 ",style: TextStyle(fontSize: 20 ,color: Colors.white), ),
-                          ],
-                        ),
-                      ),
-                    )
-                    
-                  ],
-                ),
-              ),
-            ),
           const SizedBox(height: 35),
           Container(
             height: 62,
